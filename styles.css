@@ -1,0 +1,30 @@
+.mycontainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(166, 158, 173);
+    padding: 20px;
+}
+.container-1 {
+    flex: 1;
+    background-color:lightpink;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #3f27b6;
+    border-radius: 5px;
+}
+.container-2 {
+    flex: 1;
+    background-color: rgb(161, 197, 161);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #3f27b6;
+    border-radius: 5px;
+}
+.container-3 {
+    flex: 1;
+    background-color: rgb(139, 197, 51);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #3f27b6;
+    border-radius: 5px;
+}
