@@ -254,3 +254,25 @@ alert (tunde!=samuel);*/
 // //     alert ("You are not within the range");
 // // }
 
+
+// //Check the Login
+// let userName = prompt ("Enter your username");
+// if (userName == "Admin"){
+//     let password = prompt ("Enter your password");
+//     if (password == "TheMaster"){
+//         alert ("Welcome!");
+//     } else if (password == "" || password == null){
+//         alert ("Cancelled");
+//     } else {
+//         alert ("Wrong Password");
+//     }
+// }   
+
+/*Nullish Coalescing Operator*/
+// let height = null;
+// let weight = null;
+// let area = (height ?? 100) * (weight ?? 50);
+// console.log (area); //5000
+
+let x = (1 && 2) ?? 3;
+console.log (x);
