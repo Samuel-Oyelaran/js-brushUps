@@ -274,5 +274,5 @@ alert (tunde!=samuel);*/
 // let area = (height ?? 100) * (weight ?? 50);
 // console.log (area); //5000
 
-let x = (1 && 2) ?? 3;
-console.log (x);
+// let x = (1 && 2) ?? 3;
+// console.log (x);
