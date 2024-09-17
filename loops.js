@@ -19,4 +19,35 @@
 //     sum += value 
 //     }
 // alert ('Sum, ' + sum);
-//I'm back now
+//I'm back now 12th of September, 2024
+
+// let arr = [1, 2, 3 ];
+// for (let i = 1; i <arr.length; i++){
+//     console.log (arr[i]);
+// }
+
+// for (let i = 1; i <10; i +=2){
+//     if (i ===7) {break;
+// }
+// console.log ('Total number of iterations is ' + i);
+// }
+
+//The For.. in Loop: iterates over the values of an array
+// let arr = [1, 2, 3];
+// // for (let key in arr) { 
+// //     console.log (arr[key]);
+// // }
+// //I wanna iterate over the index of the array
+// for (let index in arr) {
+// //     console.log (index);
+// // }
+
+// // The For.. in loop: iterating over an object
+// let person = {
+//    name: "John",
+//    age: 30,
+//    stateOfOrigin: "Lagos"
+// };  
+// for (let key in person){
+//     console.log (person [key]);
+// }
