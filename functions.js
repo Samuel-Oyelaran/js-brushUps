@@ -109,8 +109,113 @@
 // console.log (min(900, 400));
 
 //a function that returns x in power n or x^n
-function pow (x, n){
-    let result = (Math.pow(x, n));
-    return result;
-}
-console.log (pow(3,2))
+// function pow (x, n){
+//     let result = (Math.pow(x, n));
+//     return result;
+// }
+// console.log (pow(3,2));//9
+// console.log (pow(1, 100));
+// console.log (pow(2, 3));//8.... Great!
+
+//we've gotta do it another way
+// function pow(x, n){ 
+//     let result = x;
+//     for (let i = 1; i < n; i++){
+//         result *= x;
+//     }
+//     return result;
+// } 
+// console.log (pow(3,4));//81
+
+// // function expression
+// let sayHi = function(){
+//     console.log("Hello!");
+// };
+// sayHi()
+
+// Callback functions
+//  function doSomething (value){
+//     console.log(value.toUpperCase());
+//  }
+//  doSomething("Hello", function(value){
+//      console.log(value);
+//  });
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+//   }
+//   function showOk() {
+//     alert( "You agreed." );
+//   }
+//     function showCancel() {
+//         alert( "You canceled the execution." );
+//     }
+//     // usage: functions showOk, showCancel are passed as arguments to ask
+//     ask("Confirm Form ReSubmission!", showOk, showCancel);
+
+    
+
+/*let userPass = confirm ("Do you want to submit this form?");
+userPass ? console.log ("Your form has been submitted!") : alert ("Your form has not been submitted!");*/
+// sum (displayPage, 1, 2, 3);
+// function sum (init, x, y){
+//     let result = x + y;
+//     init (result);
+// }
+
+// function display (result){
+//     console.log (result);
+// }
+
+// function greet (name, callback){
+//     console.log (`Hello, ${name}!`);
+//     callback();
+// }
+// function sayGoodbye(){
+//     console.log ("Goodbye!");
+// }
+// greet ("Samuel", sayGoodbye);//I'm getting it now
+
+
+// function addNumbers(x, y, callback){
+//     let result = x+ y;
+//     callback (result);
+// }
+
+// function printResult(result){
+//     console.log ("The sum of the two numbers is, " + result)
+// }
+// addNumbers(5, 7, printResult);
+
+//function that sums up  two numbers using callbacks
+
+// function addNumbers (x, y, callback){
+//     let result = x + y;
+//     callback (result);
+// }
+// function displayResult (result){
+//     console.log ("The sum of the two numbers is, " + result);
+// }
+// addNumbers(90, 8, displayResult);
+
+// //function that adds two numbers without using callbacks
+// function sumNumbers (x,y){
+//     let result = x + y;
+//     console.log ("The sum of the two numbers you intend to add is" + result);
+// }
+// sumNumbers(90, 8);
+
+// function expression/function is a value
+
+// let sayHi = /*function expression*/
+// function(){
+//     alert("Hello!");
+// };
+// sayHi();//syntax for calling a function
+// alert (sayHi); //shows the function code
+// let tunde = sayHi;
+// tunde();
+// sayHi();
+
+

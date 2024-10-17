@@ -128,7 +128,7 @@ alert (tunde!=samuel);*/
 
 //Switch Statements:
 
-// let age = prompt("How old are you?");
+// let age = prompt("How old are you?"); 
 // switch(Number(age)) {
 //     case 18:
 //     alert ("You are good to go!");
@@ -276,3 +276,6 @@ alert (tunde!=samuel);*/
 
 // let x = (1 && 2) ?? 3;
 // console.log (x);
+
+// let ask = (question, yes, no) => (confirm(question)) ? yes() : no();
+

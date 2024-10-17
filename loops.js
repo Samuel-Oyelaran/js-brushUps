@@ -51,3 +51,9 @@
 // for (let key in person){
 //     console.log (person [key]);
 // }
+//printing a no from 1 to 10 using while loop
+// let n = 1;
+// while(n <= 10) {
+//     console.log (n);
+//     n++;
+// }
