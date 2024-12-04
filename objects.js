@@ -103,3 +103,111 @@
 // alert (user.canEdit);
 // alert (user.canView);
 // alert (user.name);
+
+//Nested Cloning
+// let user = {
+//     name: "John",
+//     sizes: {
+//         height: 182,
+//         width: 50
+//     }
+// };
+// let clone = Object.assign({ }, user);
+// console.log (user.sizes === clone.sizes);//true
+// user.sizes.width = 100;
+// console.log (clone.sizes.width);//100
+
+// //Method shorthand
+// user = {
+//     sayHi(){
+//         console.log("Hello");
+//     }
+// };
+
+//This in methods
+// const book = {
+//     title: "1984",
+//     author: "George Orwell",
+//     publishedYear:1949,
+//     summary (){
+//         return `${this.title} was written by ${this.author} in ${this.publishedYear}`;
+//     }
+// }
+// console.log(book.summary());
+
+//Create a calculator
+//create  an object calculator with three methods viz read() which prompts for two values and saves them as object properties with names a and b, sum() returns the sum of saved values, mul() multiplies saved values and returns the result
+// let calculator = {
+//     read(){
+//         this.a = +prompt("Enter the first value", 0);
+//         this.b = +prompt("Enter the second value", 0);
+//     }, 
+//     sum(){
+//         return this.a + this.b;
+//     },
+//     mul(){
+//         return this.a * this.b;
+//     }
+// }
+
+// calculator.read();
+// alert(calculator.sum());
+// alert(calculator.mul());
+
+//Chaining
+// let ladder = {
+//     step : 0,
+//     up(){
+//         this.step++;
+//         return this;
+//     },
+//     down(){
+//         this.step--;
+//         return this;
+//     },
+//     showStep(){
+        // alert(this.step);
+//         return this;
+//     }
+// };
+// ladder.up().up().down().showStep().down().showStep();
+
+// function Car (make, model, year, color){
+//     this.make = make,
+//     this.model = model,
+//     this.year = year,
+//     this.color= color,
+//     this.drive = function(){console.log(`"Vroooom!you are driving a ${this.model}`)}
+// }
+
+// const car1 = new Car ("Honda", "CrossTour", 2015, "Balck");
+// const car2 = new Car ("Toyota", "Camry", 2019, "White");
+
+// console.log  (car1.drive());
+// console.log (car2.drive());
+
+// const car1 = new Car("Toyota", "Camry", 2020, "Black");
+// let car2 = new Car ("Toyota", "Corolla", 2019, "White");
+
+// console.log(car1.year);
+// console.log (car2.color);
+// console.log (car2.make);
+// }
+
+// //nesting objects in constructor
+// function Church (name, location, pastor, yearOfEstablishment){
+//     this.name = name,
+//     this.location = location,
+//     this.pastor = pastor,
+//     this.yearOfEstablishment = yearOfEstablishment,
+//     this.members = {
+//         male : 100,
+//         female : 200,
+//         children : 250
+//     }
+// }
+// const cityChurch  =  new Church ("Christ Embassy", "Abuja", "Pastor Chris", 1996);
+// const orthodoxChurch = new Church ("Celestial Church", "Imeko", "Pastor Oshoffa", 1947);
+
+// console.log (orthodoxChurch.members.female)
+
