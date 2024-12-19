@@ -211,3 +211,86 @@
 
 // console.log (orthodoxChurch.members.female)
 
+//quick revision on constructor new
+// function User (name){
+//     this.name =name,
+//     this.isAdmin = false,
+//     this.height = 80,
+//     this.weight = 50
+//     this.age = 20
+// }
+// let anotherUser = new User("Tunde"); 
+// anotherUser.isAdmin = true;
+// anotherUser.weight = 70;
+// alert (anotherUser.name);
+// alert (anotherUser.isAdmin)
+// alert (anotherUser.weight);
+
+//Optional Chaining
+// let user ={
+//     profile: {
+//         name: "John"
+//         email: undefined
+//     }
+//     posts: [],
+//     comments : {
+//         likes : 100,
+//         dislikes : 50
+//     }  
+// }
+
+// console.log (user?.profile?.email);
+// console.log (user?.profile?.name);
+
+// //Methods of Primitives
+// let str = "Hello Seyifunmi";
+// console.log(str.toUpperCase());
+
+// // let n = 1.23456;
+// // console.log(n.toFixed(3));
+
+// let str = "Hello";
+// str.test = 5;
+// console.log(str.test); // undefined in non-strict mode, no error in strict mode
+
+// let billion = 10_000_00000;
+// console.log (typeof billion); 
+
+// let billions = 1e9;//the e there means 10 to the power of 9
+// console.log (billions);
+
+// let mcs = 1e-6;//the e there means 10 to the power of -6
+// console.log (mcs);
+
+// 1e3 === 1000;//true
+// 1e-3 === 1/1000;//true
+// let feed = 1234.9887
+// console.log (feed.toFixed(3));//toFIxed (n) rounds the number to n decimal places and returns the string representation of the number 
+// console.log (feed.toFixed(0));
+
+//imprecise calculations
+// alert (0.1 + 0.2)//0.30000000000000004
+
+//Math.random() generates a random number between 0 and 1
+// alert (Math.random ());
+
+// function getRandomInt(min, max){
+//     min = Math.ceil(min);
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min + 1) + min);
+//     }
+//     alert (getRandomInt(1, 100));
+
+//Math.pow() method
+// let base = 5;
+// let exponent = 3;
+// let result = Math.pow(base, exponent);
+// console.log(`${base} to the power of ${exponent} is ${result}`); 
+// console.log (Math.pow(2,5))
+
+//parseInt and parseFloat
+let age = "20";
+console.log (parseInt(age));//20
+
+let height = 15.5;
+console.log (parseFloat(height));//
