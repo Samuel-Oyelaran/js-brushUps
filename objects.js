@@ -289,8 +289,54 @@
 // console.log (Math.pow(2,5))
 
 //parseInt and parseFloat
-let age = "20";
-console.log (parseInt(age));//20
+// let age = "20";
+// console.log (parseInt(age));//20
 
-let height = 15.5;
-console.log (parseFloat(height));//
+// let height = 15.5;
+// console.log (parseFloat(height));//
+
+//a script that prompts the visitor to enter two numbers and then shows their sum
+// let a = prompt("Enter the first number", 0);
+// let b = prompt("Enter the second number", 0);
+// alert (parseInt(a) + parseInt(b)); //parseInt converts the string to a number
+
+// alert (Math.round(6.35))//why is it 6  and not 6.4? 6.35 is a floating point number. It is not stored as 6.35 but as 6.3499999999999996. So, Math.round(6.35) returns 6. To fix this, we can multiply the number by 100 and then divide it by 100 to get the correct result 
+// alert (Math.round(6.35 * 10) / 10);
+// create a function readNumber which prompts for a number until the visitor enters a valid numberic value.
+// function readNumber(){
+//     let num;
+//     do{
+//         num = prompt ("Enter a number", 0);
+//     } while (!isFinite(num));
+//     if (num === null || num === ""){
+//         return null;
+//     }
+//     return +num;
+// }
+// alert (`Read: ${readNumber()}`);
+
+// Strings are immutable
+// let str = 'Hi';
+// str [0] = 'h';
+// alert (str);
+
+// let string = 'Hello';
+// string = 'h' + string.slice(1);//
+// alert (string);
+
+// //changing the case of a string
+// let Name = "Tunde is my name";
+// alert (Name.toUpperCase());
+// alert (Name.toLowerCase());
+
+// let fruit = "banana";
+// let fruitPos = fruit.indexOf("na", 2);
+// alert (fruitPos);//2 because the search starts from the 2nd position of the index and returns the position of the first occurrence of the substring
+
+// //slice method
+// let str = "stringify";
+// alert (str.slice(0, 6));//string - the first argument is the starting position and the second argument is the ending position. The ending position is not included in the result
+
+
+// let fruit = "Banana"
+// alert (fruit.slice (1, 4));
