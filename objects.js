@@ -339,4 +339,5 @@
 
 
 // let fruit = "Banana"
-// alert (fruit.slice (1, 4));
+// alert (fruit.slice (1, 4));//
+
